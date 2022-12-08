@@ -1,4 +1,4 @@
-# naver_movie_all_review.ipynb 
+# naver_movie_review.ipynb 
 
 
 ## 프로젝트를 시작하는 방법
