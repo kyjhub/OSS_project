@@ -39,12 +39,12 @@ train-dataset is prepared<br/>
 
 ======== Epoch 1 / 3 ========<br/>
 <br/>
-  Train loss: 0.31, Train Accuracy: 0.87<br/>
+  Train loss: 0.31, Train Accuracy: 0.87<br/>
   Training epcoh took: 0:13:04<br/>
 <br/>
 Running Validation...<br/>
-  Validation Accuracy: 0.88<br/>
-  Validation took: 0:00:29<br/>
+  Validation Accuracy: 0.88<br/>
+  Validation took: 0:00:29<br/>
 |   | precision | recall | f1-score | support |
 |:-:|:---------:|:------:|:--------:|:-------:|
 | 0 |    0.85   |  0.92  |   0.88   |   2177  |
@@ -60,30 +60,30 @@ Running Validation...<br/>
 <br/>
 ======== Epoch 2 / 3 ========<br/>
 <br/>
-  Train loss: 0.19, Train Accuracy: 0.93<br/>
-  Training epcoh took: 0:13:00<br/>
+  Train loss: 0.19, Train Accuracy: 0.93<br/>
+  Training epcoh took: 0:13:00<br/>
 <br/>
 Running Validation...<br/>
-  Validation Accuracy: 0.90<br/>
-  Validation took: 0:00:29<br/>
+  Validation Accuracy: 0.90<br/>
+  Validation took: 0:00:29<br/>
               precision    recall  f1-score   support<br/>
 <br/>
-           0       0.90      0.90      0.90      2177<br/>
-           1       0.90      0.90      0.90      2292<br/>
+           0     0.90    0.90    0.90    2177<br/>
+           1     0.90    0.90    0.90    2292<br/>
 <br/>
-    accuracy                           0.90      4469<br/>
-   macro avg       0.90      0.90      0.90      4469<br/>
-weighted avg       0.90      0.90      0.90      4469<br/>
+    accuracy                         0.90    4469<br/>
+   macro avg     0.90    0.90    0.90    4469<br/>
+weighted avg     0.90    0.90    0.90    4469<br/>
 <br/>
 <br/>
 ======== Epoch 3 / 3 ========<br/>
 <br/>
-  Train loss: 0.11, Train Accuracy: 0.96<br/>
-  Training epcoh took: 0:13:00<br/>
+  Train loss: 0.11, Train Accuracy: 0.96<br/>
+  Training epcoh took: 0:13:00<br/>
 <br/>
 Running Validation...<br/>
-  Validation Accuracy: 0.90<br/>
-  Validation took: 0:00:29<br/>
+  Validation Accuracy: 0.90<br/>
+  Validation took: 0:00:29<br/>
               precision    recall  f1-score   support<br/>
 <br/>
            0       0.91      0.89      0.90      2177<br/>
