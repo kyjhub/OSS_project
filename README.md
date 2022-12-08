@@ -23,6 +23,7 @@
 ![movie_find](./image/img7.png)
 - 영화 리뷰 중 빈도수가 높은 단어를 그래프와 wordcloud로 표현<br/><br/>
 ![movie_find](./image/img8.png)
+`아래 이미지는 깃허브가 day모드로 설정해야 세로축의 글자가 보인다.`
 ![movie_find](./image/img9.png)
 ![movie_find](./image/img10.png)
 - 단어 그래프의 한글 깨짐 현상을 해결하기 위해 폰트 설정 코드
