@@ -45,7 +45,7 @@ train-dataset is prepared<br/>
 Running Validation...<br/>
   Validation Accuracy: 0.88<br/>
   Validation took: 0:00:29<br/>
-             ||precision   |recall |f1-score  |support|<br/>
+             |비고|precision   |recall |f1-score  |support|<br/>
 <br/>
 |---|---|---|---|---|
           |0      |0.85     |0.92     |0.88     |2177|<br/>
