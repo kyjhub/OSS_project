@@ -30,6 +30,119 @@
 - 출현빈도 높은 단어 wordcloud방식으로 출력<br/><br/>
 - 다른 분의 영화 리뷰 데이터로 학습하는 자연어처리 감정분석 딥러닝 실행<br/><br/>
 `코랩 무료 버전으로는 대략 40분~1시간 정도 걸림`<br/>
-![movie_find](./image/img11.png)
+![movie_find](./image/img11.png)<br/>
+2 labels, 44682 dataset<br/>
+label counts:: Counter({1: 22512, 0: 22170})<br/>
+Downloading: 100%<br/><br/>
+80.0/80.0 [00:00<00:00, 2.40kB/s]<br/>
+Downloading: 100%<br/><br/>
+344k/344k [00:00<00:00, 1.74MB/s]<br/>
+Downloading: 100%<br/><br/>
+725/725 [00:00<00:00, 21.4kB/s]<br/>
+Downloading: 100%<br/><br/>
+476M/476M [00:06<00:00, 71.6MB/s]<br/>
+Some weights of the model checkpoint at kykim/bert-kor-base were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight']<br/>
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).<br/>
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).<br/>
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at kykim/bert-kor-base and are newly initialized: ['classifier.weight', 'classifier.bias']<br/>
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.<br/>
+train-dataset is prepared<br/>
+<br/>
+======== Epoch 1 / 3 ========<br/>
+Training...<br/>
+/usr/local/lib/python3.8/dist-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning<br/>
+  warnings.warn(<br/>
+  Batch   100  of  1,257.    Elapsed: 0:01:05.<br/>
+  Batch   200  of  1,257.    Elapsed: 0:02:07.<br/>
+  Batch   300  of  1,257.    Elapsed: 0:03:09.<br/>
+  Batch   400  of  1,257.    Elapsed: 0:04:11.<br/>
+  Batch   500  of  1,257.    Elapsed: 0:05:14.<br/>
+  Batch   600  of  1,257.    Elapsed: 0:06:16.<br/>
+  Batch   700  of  1,257.    Elapsed: 0:07:18.<br/>
+  Batch   800  of  1,257.    Elapsed: 0:08:20.<br/>
+  Batch   900  of  1,257.    Elapsed: 0:09:22.<br/>
+  Batch 1,000  of  1,257.    Elapsed: 0:10:24.<br/>
+  Batch 1,100  of  1,257.    Elapsed: 0:11:26.<br/>
+  Batch 1,200  of  1,257.    Elapsed: 0:12:28.<br/>
+<br/>
+  Train loss: 0.31, Train Accuracy: 0.87<br/>
+  Training epcoh took: 0:13:04<br/>
+<br/>
+Running Validation...<br/>
+  Validation Accuracy: 0.88<br/>
+  Validation took: 0:00:29<br/>
+              precision    recall  f1-score   support<br/>
+<br/>
+           0       0.85      0.92      0.88      2177<br/>
+           1       0.92      0.85      0.88      2292<br/>
+<br/>
+    accuracy                           0.88      4469<br/>
+   macro avg       0.88      0.88      0.88      4469<br/>
+weighted avg       0.89      0.88      0.88      4469<br/>
+<br/>
+<br/>
+======== Epoch 2 / 3 ========<br/>
+Training...<br/>
+  Batch   100  of  1,257.    Elapsed: 0:01:02.<br/>
+  Batch   200  of  1,257.    Elapsed: 0:02:04.<br/>
+  Batch   300  of  1,257.    Elapsed: 0:03:06.<br/>
+  Batch   400  of  1,257.    Elapsed: 0:04:08.<br/>
+  Batch   500  of  1,257.    Elapsed: 0:05:10.<br/>
+  Batch   600  of  1,257.    Elapsed: 0:06:12.<br/>
+  Batch   700  of  1,257.    Elapsed: 0:07:15.<br/>
+  Batch   800  of  1,257.    Elapsed: 0:08:17.<br/>
+  Batch   900  of  1,257.    Elapsed: 0:09:19.<br/>
+  Batch 1,000  of  1,257.    Elapsed: 0:10:21.<br/>
+  Batch 1,100  of  1,257.    Elapsed: 0:11:23.<br/>
+  Batch 1,200  of  1,257.    Elapsed: 0:12:25.<br/>
+<br/>
+  Train loss: 0.19, Train Accuracy: 0.93<br/>
+  Training epcoh took: 0:13:00<br/>
+<br/>
+Running Validation...<br/>
+  Validation Accuracy: 0.90<br/>
+  Validation took: 0:00:29<br/>
+              precision    recall  f1-score   support<br/>
+<br/>
+           0       0.90      0.90      0.90      2177<br/>
+           1       0.90      0.90      0.90      2292<br/>
+<br/>
+    accuracy                           0.90      4469<br/>
+   macro avg       0.90      0.90      0.90      4469<br/>
+weighted avg       0.90      0.90      0.90      4469<br/>
+<br/>
+<br/>
+======== Epoch 3 / 3 ========<br/>
+Training...<br/>
+  Batch   100  of  1,257.    Elapsed: 0:01:02.<br/>
+  Batch   200  of  1,257.    Elapsed: 0:02:04.<br/>
+  Batch   300  of  1,257.    Elapsed: 0:03:06.<br/>
+  Batch   400  of  1,257.    Elapsed: 0:04:08.<br/>
+  Batch   500  of  1,257.    Elapsed: 0:05:10.<br/>
+  Batch   600  of  1,257.    Elapsed: 0:06:13.<br/>
+  Batch   700  of  1,257.    Elapsed: 0:07:15.<br/>
+  Batch   800  of  1,257.    Elapsed: 0:08:17.<br/>
+  Batch   900  of  1,257.    Elapsed: 0:09:19.<br/>
+  Batch 1,000  of  1,257.    Elapsed: 0:10:21.<br/>
+  Batch 1,100  of  1,257.    Elapsed: 0:11:23.<br/>
+  Batch 1,200  of  1,257.    Elapsed: 0:12:25.<br/>
+<br/>
+  Train loss: 0.11, Train Accuracy: 0.96<br/>
+  Training epcoh took: 0:13:00<br/>
+<br/>
+Running Validation...<br/>
+  Validation Accuracy: 0.90<br/>
+  Validation took: 0:00:29<br/>
+              precision    recall  f1-score   support<br/>
+<br/>
+           0       0.91      0.89      0.90      2177<br/>
+           1       0.89      0.91      0.90      2292<br/>
+<br/>
+    accuracy                           0.90      4469<br/>
+   macro avg       0.90      0.90      0.90      4469<br/>
+weighted avg       0.90      0.90      0.90      4469<br/>
+<br/>
+<br/>
+Training complete!<br/>
 - 학습된 딥러닝으로 현재 크롤링한 리뷰 데이터에 대한 긍정, 부정 예측<br/><br/>
 ![movie_find](./image/img12.png)
