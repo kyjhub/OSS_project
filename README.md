@@ -69,11 +69,11 @@ Running Validation...<br/>
               precision    recall  f1-score   support<br/>
 <br/>
            0       0.90      0.90      0.90      2177<br/>
-           1       0.90      0.90      0.90      2292<br/>
+           1       0.90      0.90      0.90      2292<br/>
 <br/>
-    accuracy                           0.90      4469<br/>
-   macro avg       0.90      0.90      0.90      4469<br/>
-weighted avg       0.90      0.90      0.90      4469<br/>
+    accuracy                           0.90      4469<br/>
+   macro avg       0.90      0.90      0.90      4469<br/>
+weighted avg       0.90      0.90      0.90      4469<br/>
 <br/>
 <br/>
 ======== Epoch 3 / 3 ========<br/>
