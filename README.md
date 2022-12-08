@@ -1,9 +1,21 @@
 # naver_movie_review.ipynb 
 
+## Description
+이 프로젝트는 자연어처리 분야를 연구하는 분들이 데이터를 쉽게 사용할 수 있도록 하기 위해 실행되었다.<br/>
+영화 제목을 입력하면 해당 제목의 네이버 영화 리뷰 데이터와 평점을 수집, 저장한 후 딥러닝을 통한 감정분석(0: 부정, 1: 긍정)으로 수집한 리뷰에서 긍정율 측정<br/><br/>
+
+##Environment
+google colab <br/>
+python 3.8.15 <br/><br/>
+
+##Usage of Package
+
+##Reference
 
 ` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
-` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`
-## 프로젝트를 실행시 과정
+` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
+
+## 코드 실행 과정
 
 1. 리뷰를 찾고싶은 영화 제목을 입력한다.<br/>
 ![movie_list](./image/img2.png)<br/><br/>
