@@ -16,15 +16,19 @@
 ![movie_find](./image/img5.png)
 - 리뷰 중 결측치 제거와 리뷰 데이터 개요 출력<br/><br/>
 ![movie_find](./image/img6.png)
-- 리뷰 파일을 csv파일형태로 저장
-- 한국어 형태소 분석기 설치
-- 실질적인 영화 리뷰에 관련 없는 용어를 제거<br/><br/>
-![
+- 리뷰 파일을 csv파일형태로 저장<br/>
+- 한국어 형태소 분석기 설치<br/>
+- 리뷰를 토큰화 후 관련 없는 용어를 제거<br/><br/>
+제거 후 남은 용어 예시<br/>
+![movie_find](./image/img7.png)
 - 영화 리뷰 중 빈도수가 높은 단어를 그래프와 wordcloud로 표현<br/><br/>
+![movie_find](./image/img8.png)
+![movie_find](./image/img9.png)
+![movie_find](./image/img10.png)
 - 단어 그래프의 한글 깨짐 현상을 해결하기 위해 폰트 설정 코드
-- 
-
-
-- 리뷰들 토큰화 후 불용어 제거
-- 출현빈도 높은 단어 wordcloud방식으로 출력
-
+- 출현빈도 높은 단어 wordcloud방식으로 출력<br/><br/>
+- 다른 분의 영화 리뷰 데이터로 학습하는 자연어처리 감정분석 딥러닝 실행<br/><br/>
+`코랩 무료 버전으로는 대략 40분~1시간 정도 걸림`<br/>
+![movie_find](./image/img11.png)
+- 학습된 딥러닝으로 현재 크롤링한 리뷰 데이터에 대한 긍정, 부정 예측<br/><br/>
+![movie_find](./image/img12.png)
