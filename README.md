@@ -68,7 +68,7 @@ Running Validation...<br/>
   Validation took: 0:00:29<br/>
               precision    recall  f1-score   support<br/>
 <br/>
-           0       0.90      0.90      0.90      2177<br/>
+           0       0.90      0.90      0.90      2177<br/>
            1       0.90      0.90      0.90      2292<br/>
 <br/>
     accuracy                           0.90      4469<br/>
