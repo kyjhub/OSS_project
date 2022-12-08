@@ -47,8 +47,9 @@ Running Validation...<br/>
   Validation took: 0:00:29<br/>
               precision    recall  f1-score   support<br/>
 <br/>
-           0       0.85      0.92      0.88      2177<br/>
-           1       0.92      0.85      0.88      2292<br/>
+|---|---|---|---|---|
+          |0      |0.85     |0.92     |0.88     |2177|<br/>
+          |1      |0.92     |0.85     |0.88     |2292|<br/>
 <br/>
     accuracy                           0.88      4469<br/>
    macro avg       0.88      0.88      0.88      4469<br/>
