@@ -29,7 +29,7 @@ beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/
 - 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다.
 <br/>
 
-## 코드 실행 과정
+## code execution process
 ` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
 ` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
 
