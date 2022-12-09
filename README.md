@@ -27,10 +27,11 @@ beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/
 ## Shortcoming
 - 리뷰를 파일로 저장한 후에 다시 파일을 불러오는 도중 결측치가 발생하는 경우가 있다.
 - 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다.
-` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
-` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
+<br/>
 
 ## 코드 실행 과정
+` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
+` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
 
 1. 리뷰를 찾고싶은 영화 제목을 입력한다.<br/>
 ![movie_list](./image/img2.png)<br/><br/>
