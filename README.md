@@ -1,4 +1,4 @@
-# naver_movie_review.ipynb 
+# 원하는 네이버 영화 리뷰 수집기 
 
 ## Description
 이 프로젝트는 자연어처리 분야를 연구하는 분들이 데이터를 쉽게 사용할 수 있도록 하기 위해 실행되었다.<br/>
@@ -24,6 +24,9 @@ beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
 <br/><br/>
 
+## Shortcoming
+- 리뷰를 파일로 저장한 후에 다시 파일을 불러오는 도중 결측치가 발생하는 경우가 있다.
+- 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다.
 ` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
 ` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
 
