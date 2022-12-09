@@ -9,6 +9,8 @@ google colab <br/>
 python 3.8.15 <br/><br/>
 
 ## Usage of Package
+beautifulsoup reference : [reference_url](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+<br/>
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
 <br/><br/>
