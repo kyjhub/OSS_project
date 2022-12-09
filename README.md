@@ -9,8 +9,7 @@ google colab <br/>
 python 3.8.15 <br/><br/>
 
 ## Usage of Package
-자연어처리 BERT는 \[kiyoungkim1/ReadyToUseAI] \[1]
-\[1]: https://github.com/kiyoungkim1/ReadyToUseAI
+자연어처리 BERT는 [kiyoungkim1](https://github.com/kiyoungkim1/ReadyToUseAI)
 <br/><br/>
 
 ## Reference
