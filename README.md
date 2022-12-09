@@ -8,14 +8,21 @@
 google colab <br/>
 python 3.8.15 <br/><br/>
 
-## Usage of Package
+## Usage of Library, Package, Module
+- BeautifulSoup
+- urllib
+- pandas
+- requests
+- cv2
+- numpy
+<br/><br/>
+
+## Reference
 beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 <br/>
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
 <br/><br/>
-
-## Reference
 
 ` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
 ` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
