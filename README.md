@@ -51,7 +51,7 @@ python 3.8.15 <br/><br/>
 
 1. 출현빈도 높은 단어 wordcloud방식으로 출력<br/><br/>
 
-1. 다른 분의 영화 리뷰 데이터로 학습하는 자연어처리 감정분석 딥러닝 실행<br/>
+1. BERT fine-tuning을<br/>
 `코랩 무료 버전으로는 대략 40분~1시간 정도 걸림`<br/>
 ![movie_find](./image/img11.png)<br/><br/>
 
