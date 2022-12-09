@@ -51,9 +51,9 @@ python 3.8.15 <br/><br/>
 
 1. 출현빈도 높은 단어 wordcloud방식으로 출력<br/><br/>
 
-1. BERT fine-tuning을<br/>
+1. 네이버 영화 리뷰와 긍/부정 레이블 데이터를 BERT에 학습시킨다.<br/>
 `코랩 무료 버전으로는 대략 40분~1시간 정도 걸림`<br/>
 ![movie_find](./image/img11.png)<br/><br/>
 
-1. 학습된 딥러닝으로 현재 크롤링한 리뷰 데이터에 대한 긍정, 부정 예측<br/>
+1. BERT fine-tuning을 이용해서 현재 크롤링한 리뷰 데이터의 대한 긍/부정 예측 후 긍/부정 비율 출력<br/>
 ![movie_find](./image/img12.png)
