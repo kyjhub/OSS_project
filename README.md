@@ -70,26 +70,39 @@ BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/Ready
 ![movie_find](./image/img3.png)<br/>
 - 영화의 순서를 입력하면 해당하는 영화코드를 `search_movie_code` 변수에 저장<br/><br/>
 
-1. 네이버 영화리뷰 한 페이지 리뷰 크롤링할 때마다 "페이지n 리뷰" 출력<br/>
+1. 영화 평점, 리뷰 크롤링<br/>
 ![movie_find](./image/img4.png)<br/>
 - 영화 평점과 리뷰를 저장할 데이터프레임 생성<br/>
 - 평점은 `em`태그에서 추출
 - 리뷰는 `filtered_ment_숫자` id에서 추출<br/> 
 ex) 첫번째 리뷰 = filtered_ment_0, 2번째 리뷰 = filtered_ment_1
 - 다음 페이지 이동은 `pg_next` class에서 `href값` 추출해서 url변경해서 이루어진다.
+- 네이버 영화리뷰 한 페이지 리뷰 크롤링할 때마다 "페이지n 리뷰" 출력
+<br/><br/>
 
-네이버 영화 리뷰 클롤링 결과 확인(데이터 프레임에 데이터 저장하면서 크롤링)<br/>
+## 네이버 영화 리뷰 크롤링 결과 확인<br/>
+`review` 변수에 크롤링 결과 저장<br/>
 ![movie_find](./image/img5.png)
-1. 리뷰 중 결측치 제거와 리뷰 데이터 개요 출력<br/>
-![movie_find](./image/img6.png)<br/><br/>
+<br/><br/>
+
+1. 데이터 결측치 제거와 리뷰 데이터 개요 출력<br/>
+![movie_find](./image/img6.png)
+<br/><br/>
 
 1. 리뷰 파일을 csv파일형태로 저장<br/>
+- utf-8로 encoding
+<br/><br/>
+---+
+`아래의 코드부터는 외부 코드 복사`
+---+
 
-1. 한국어 형태소 분석기 설치<br/>
+1. 한국어 형태소 분석기 설치
+<br/><br/>
 
 1. 리뷰를 토큰화 후 관련 없는 용어를 제거<br/>
 제거 후 남은 용어 예시<br/>
-![movie_find](./image/img7.png)<br/><br/>
+![movie_find](./image/img7.png)
+<br/><br/>
 
 1. 영화 리뷰 중 빈도수가 높은 단어를 그래프와 wordcloud로 표현<br/>
 ![movie_find](./image/img8.png)<br/>
