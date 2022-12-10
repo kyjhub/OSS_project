@@ -20,6 +20,8 @@ python 3.8.15 <br/><br/>
 ## Reference
 beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 <br/>
+한글 폰트 설정 :  [colab 사용시 한글 깨짐 현상 해결](https://didalsgur.tistory.com/entry/Python-Colab-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0-feat-matplotlib)
+<br/>
 리뷰 분석 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
 <
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
