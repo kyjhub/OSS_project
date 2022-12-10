@@ -2,9 +2,13 @@
 ![book_cover](./image/img0.png)
 <br/>
 
+## Motivation
+이 프로젝트는 자연어 처리 연구를 하는 분들의 데이터 수집에 대한 수고를 덜도록 하기 위해 실행되었다.
+또한 한국어 자연어처리 분야가 더 성장했으면 하는 바램으로 하게 되었다.
+<br/>
+
 ## Description
-이 프로젝트는 자연어처리 분야를 연구하는 분들이 데이터를 쉽게 사용할 수 있도록 하기 위해 실행되었다.<br/>
-영화 제목을 입력하면 해당 제목의 네이버 영화 리뷰 데이터와 평점을 수집, 저장한 후 딥러닝을 통한 감정분석(0: 부정, 1: 긍정)으로 수집한 리뷰에서 긍정율 측정<br/><br/>
+영화 제목을 입력하면 해당 제목의 네이버 영화 리뷰 데이터와 평점을 수집, 저장한 후 딥러닝을 통한 감정분석(0: 부정, 1: 긍정)으로 수집한 리뷰에서 긍/부정 비율 측정<br/><br/>
 
 ## Environment
 google colab <br/>
@@ -24,7 +28,7 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 <br/>
 한글 폰트 설정 :  [colab 사용시 한글 깨짐 현상 해결](https://didalsgur.tistory.com/entry/Python-Colab-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0-feat-matplotlib)
 <br/>
-리뷰 분석 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
+리뷰 데이터 불용어 제거, 바차트, wordcloud 등 분석 코드 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
 <br/>
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
