@@ -18,7 +18,7 @@ python 3.8.15 <br/><br/>
 <br/><br/>
 
 ## Reference
-beautifulsoup reference : [Beautiful_Soup_Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 <br/>
 한글 폰트 설정 :  [colab 사용시 한글 깨짐 현상 해결](https://didalsgur.tistory.com/entry/Python-Colab-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0-feat-matplotlib)
 <br/>
