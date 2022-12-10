@@ -64,7 +64,7 @@ BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/Ready
 ![movie_lists](./image/img14.png)<br/>
 - 검색어 관련 영화가 많은 경우 `더많은 영화보기` 버튼을 눌렀을 때 이동하는 영화 목록 사이트의 url인 `more_list` class의 `href값`을 추출해서 영화 목록 페이지에서 크롤링 시작<br/>
 - 다음 페이지의 영화 목록을 크롤링해야 할 때는 다음 페이지 url인 `td`의 `next` class의 `href값` 추출해서 url변수에 저장<br/><br/>
-- 각 영화 리뷰 페이지는 `https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code=`에 영화코드가 붙여진 페이지에 있다. 그래서 영화 목록을 크롤링할 때 `movie_codes` 리스트에 각 영화의 영화코드를 추출해서 저장한다.
+- 각 영화 리뷰 페이지는 `https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code=`에 영화코드가 붙여진 페이지에 있다. 그래서 영화 목록을 크롤링할 때 `movie_codes` 리스트에 각 영화의 영화코드를 추출해서 저장한다.<br/>
 ![movie_list](./image/img1.png)<br/>
 - 각 영화 목록의 순서 - 1이 movie_codes리스트의 인덱스다.<br/><br/>
 
