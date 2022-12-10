@@ -60,7 +60,8 @@ BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/Ready
 ![movie_list](./image/img13.png)<br/>
 이 페이지에서 `search_list_1` class태그에서 영화 포스터, 정보를 추출한다.<br/><br/>
 ![movie_lists](./image/img14.png)<br/>
-검색어 관련 영화가 많은 경우 `더많은 영화보기` 버튼을 눌렀을 때 이동하는 영화 목록 사이트의 url인 `more_list` class 태그의 href값 
+검색어 관련 영화가 많은 경우 `더많은 영화보기` 버튼을 눌렀을 때 이동하는 영화 목록 사이트의 url인 `more_list` class 태그의 href값을 추출해서 영화 목록 페이지에서 크롤링 시작<br/>
+다음 페이지의 영화 목록을 크롤링해야 할 때는 다음 페이지 url인 td의 `next` class태그의 href값 추출해서 url변수에 저장<br/>
 ![movie_list](./image/img1.png)<br/><br/>
 
 1. 그 중 원하는 영화의 순서(1~n)를 입력<br/>
