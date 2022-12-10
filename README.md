@@ -31,13 +31,18 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 리뷰 데이터 불용어 제거, 바차트, wordcloud 등 분석 코드 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
 <br/>
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
-                  [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
+                  [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)
 <br/><br/>
 
 ## Shortcoming
 - 리뷰를 파일로 저장한 후에 다시 파일을 불러오는 도중 결측치가 발생하는 경우가 있다.
 - 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다. 예시로 코랩 무로 버전에서 '인터스텔라' 영화의 4만건 이상의 리뷰 데이터를 입력했다가 중단됨.
 <br/>
+
+## What to do next
+- 리뷰가 계속해서 새로 생기므로 매번 리뷰 전체를 긁어오는 것이 아닌 새롭게 생성된 데이터만 추가적으로 가져오는 자동화 시스템
+- 로그, 이미지 등 다양한 것들의 크롤링
+<br/><br/>
 
 ## code execution process
 ` 이 코드는 구글 코랩 기반으로 작성되었습니다.`  
