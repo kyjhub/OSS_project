@@ -23,14 +23,14 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 한글 폰트 설정 :  [colab 사용시 한글 깨짐 현상 해결](https://didalsgur.tistory.com/entry/Python-Colab-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0-feat-matplotlib)
 <br/>
 리뷰 분석 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
-<
+<br/>
 자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)의 자연어처리 강의
 <br/><br/>
 
 ## Shortcoming
 - 리뷰를 파일로 저장한 후에 다시 파일을 불러오는 도중 결측치가 발생하는 경우가 있다.
-- 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다.
+- 마지막 셀의 코드에서 `logit = CLS.inference(sentences=review_list)` 입력 파일에 크기가 큰 파일은 코랩 기본 버전으로는 사용할 수 없다. 파일을 여러개로 쪼개서 차례로 입력하거나 코랩 프로 버전을 사용하면 가능할 것이다. 예시로 코랩 무로 버전에서 '인터스텔라' 영화의 4만건 이상의 리뷰 데이터를 입력했다가 중단됨.
 <br/>
 
 ## code execution process
