@@ -41,7 +41,7 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 
 ## What to do next
 - 리뷰가 계속해서 새로 생기므로 매번 리뷰 전체를 긁어오는 것이 아닌 새롭게 생성된 데이터만 추가적으로 가져오는 자동화 시스템
-- 로그, 이미지 등 다양한 것을 크롤링하는법
+- 로그, 이미지 등 다양한 것을 크롤링 기술 학습
 <br/><br/>
 
 ## code execution process
