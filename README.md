@@ -58,7 +58,8 @@ BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/Ready
 
 1. 입력한 영화 제목이 포함된 모든 영화 정보와 포스터 출력<br/>
 ![movie_list](./image/img13.png)<br/>
-이 페이지에서 `search_list_1` class태그에서 영화 포스터, 정보를 추출한다.<br/> 
+이 페이지에서 `search_list_1` class태그에서 영화 포스터, 정보를 추출한다.<br/><br/>
+![movie_lists](./image/img14.png)<br/>
 검색어 관련 영화가 많은 경우 `더많은 영화보기` 버튼을 눌렀을 때 이동하는 영화 목록 사이트의 url인 `more_list` class 태그의 href값 
 ![movie_list](./image/img1.png)<br/><br/>
 
