@@ -30,7 +30,7 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 <br/>
 리뷰 데이터 불용어 제거, 바차트, wordcloud 등 분석 코드 : [이수안컴퓨터연구소_유튜브](https://youtu.be/RgKzmJQf21s)
 <br/>
-자연어처리 BERT : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
+BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/ReadyToUseAI), 
                   [kiyoungkim1's youtube](https://youtu.be/9HDBKS4j64M)
 <br/><br/>
 
