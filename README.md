@@ -78,10 +78,6 @@ beautifulsoup 사용법 : [Beautiful_Soup_Documentation](https://www.crummy.com/
 ![movie_find](./image/img9.png)<br/>
 ![movie_find](./image/img10.png)<br/><br/>
 
-1. 단어 그래프의 한글 깨짐 현상을 해결하기 위해 폰트 설정 코드<br/><br/>
-
-1. 출현빈도 높은 단어 wordcloud방식으로 출력<br/><br/>
-
 1. 네이버 영화 리뷰와 긍/부정 레이블 데이터를 BERT에 학습시킨다.<br/>
 `코랩 무료 버전으로는 대략 40분~1시간 정도 걸림`<br/>
 ![movie_find](./image/img11.png)<br/><br/>
