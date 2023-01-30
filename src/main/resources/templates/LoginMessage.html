@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:if="${#strings.length(data.message) != 0}">
+        <script th:inline="javascript">
+            /*<![CDATA[*/
+            var message = [[${data.message}]]
+            alert(message);
+        </script>
+    </th:block>
+    <th:block th:if="${#strings.length(data.href) != 0}">
+        <script th:inline="javascript">
+            /*<![CDATA[*/
+            var href = [[${data.href}]]
+            window.location.href = href;
+        </script>
+    </th:block>
+</head>
+</html>
