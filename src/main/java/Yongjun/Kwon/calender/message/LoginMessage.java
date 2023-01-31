@@ -5,11 +5,11 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class LoginFailMessage {
+public class LoginMessage {
     private String message;
     private String href;
 
-    public LoginFailMessage(String message, String href) {
+    public LoginMessage(String message, String href) {
         this.message = message;
         this.href = href;
     }

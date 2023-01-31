@@ -16,4 +16,10 @@ public class HomeController {
         log.info("home controller");
         return "home2";
     }
+
+    @GetMapping("/calender")
+    public String calender() {
+        log.info("calender controller");
+        return "calender";
+    }
 }
