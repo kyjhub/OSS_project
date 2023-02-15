@@ -3,7 +3,6 @@ package Yongjun.Kwon.calender.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,11 +14,5 @@ public class HomeController {
         model.addAttribute("memberForm", new MemberForm());
         log.info("home controller");
         return "home2";
-    }
-
-    @GetMapping("/calender")
-    public String calender() {
-        log.info("calender controller");
-        return "calender";
     }
 }

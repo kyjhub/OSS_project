@@ -4,7 +4,6 @@ import Yongjun.Kwon.calender.domain.Event;
 import Yongjun.Kwon.calender.domain.Member;
 import Yongjun.Kwon.calender.repository.EventRepository;
 import Yongjun.Kwon.calender.repository.MemberRepository;
-import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +16,7 @@ public class EventService {
     private final EventRepository eventRepository;
 
     /* 일정 생성 */
-    public Long GenerateEvent(Long memberId, String todo) {
+    public Long generateEvent(Long memberId, String todo) {
         Member member = memberRepository.find(memberId);
         Event event = Event.createEvent(member, todo);
 
