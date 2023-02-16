@@ -22,7 +22,7 @@ public class EventController {
 
     @ResponseBody
     @PostMapping("/calender")
-    public String addEvent(@ModelAttribute CreateEventRequest createEventRequest) {
+    public String addEvent(@RequestBody CreateEventRequest createEventRequest) {
         log.info("createEventRequest.todo= {}", createEventRequest.getTodo());
         log.info("createEventRequest.localDateTime= {}", createEventRequest.getLocalDateTime());
 //        eventService.generateEvent()
