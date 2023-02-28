@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
@@ -18,7 +19,7 @@ public class MemberRepository {
         em.persist(member);
     }
 
-    public Member find(Long Id) {
+    public Member find(String Id) {
         return em.find(Member.class, Id);
     }
 
@@ -27,10 +28,10 @@ public class MemberRepository {
                 .getResultList();
     }
 
-    public Member findById(Long Id) {
-        return em.createQuery("select m from Member m where m.id=:id", Member.class)
-                .setParameter("id", Id)
-                .getSingleResult();
+    public Optional<Member> findById(String loginId) {
+        return findAll().stream()
+                .filter(m -> m.getId().equals(loginId))
+                .findFirst();
     }
 
     public Member findByName(String Name) {

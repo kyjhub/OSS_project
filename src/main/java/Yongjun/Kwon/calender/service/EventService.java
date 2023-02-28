@@ -16,7 +16,7 @@ public class EventService {
     private final EventRepository eventRepository;
 
     /* 일정 생성 */
-    public Long generateEvent(Long memberId, String todo) {
+    public Long generateEvent(String memberId, String todo) {
         Member member = memberRepository.find(memberId);
         Event event = Event.createEvent(member, todo);
 

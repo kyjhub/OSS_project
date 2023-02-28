@@ -10,19 +10,20 @@ import lombok.Getter;
 @Entity
 @Getter
 public class Member {
-    @Id @GeneratedValue
+    @Id
     @Column(name = "member_id")
-    private Long id;
+    private String id;
+    private String password;
     private String name;
-    private String birth;
     private String phoneNumber;
 
     protected Member() {
     }
 
-    public Member(String name, String birth, String phoneNumber) {
+    public Member(String id, String password, String name, String phoneNumber) {
+        this.id = id;
+        this.password = password;
         this.name = name;
-        this.birth = birth;
         this.phoneNumber = phoneNumber;
     }
 }

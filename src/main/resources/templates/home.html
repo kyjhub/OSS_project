@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>로그인/회원가입</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/css/home2.css"/>
+</head>
+<body>
+<div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+        <form action="/members/new" th:object="${memberForm}" class="form" id="form1" method="post">
+            <h2 class="form__title">Sign Up</h2>
+
+            <div th:if="${#fields.hasGlobalErrors()}">
+                <p class="field-error" th:each="err : ${#fields.globalErrors()}"
+                   th:text="${err}">전체 오류 메시지</p>
+            </div>
+
+<!--            <div>-->
+                <input type="text" th:field="*{id}" placeholder="아이디" class="input"
+                       title="아이디를 입력해주세요"
+                        th:errorclass="field-error">
+                <div class="field-error" th:errors="*{id}"/>
+<!--            </div>-->
+<!--            <div>-->
+                <input type="password" th:field="*{password}" placeholder="비밀번호" class="input"
+                       title="비밀번호를 입력해주세요"
+                       th:errorclass="field-error">
+                <div class="field-error" th:errors="*{password}"/>
+<!--            </div>-->
+<!--            <div>-->
+                <input type="tel" th:field="*{phoneNumber}" placeholder="전화번호" class="input"
+                       title="전화번호를 입력해주세요"
+                       th:errorclass="field-error">
+                <div class="field-error" th:errors="*{phoneNumber}"/>
+<!--            </div>-->
+<!--            <div>-->
+                <input type="text" th:field="*{name}" placeholder="이름" class="input"
+                       title="성함을 입력해주세요"
+                       th:errorclass="field-error">
+                <div class="field-error" th:errors="*{name}"/>
+<!--            </div>-->
+            <!--<input type="password" th:field="*{password}" placeholder="비밀번호" class="input"
+                   title="비밀번호를 입력해주세요."/>
+            <input type="tel" th:field="*{phoneNumber}" placeholder="전화번호 -없이" class="input" maxlength="11"
+                   title="전화번호를 입력해주세요 전화번호는 11자리입니다."/>
+            <input type="tel" th:field="*{name}" placeholder="이름 입력" class="input" maxlength="11"
+                   title="이름을 입력해주세요."/>-->
+            <button type="submit" class="btn">회원가입</button>
+        </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+        <form action="/login" th:object="${loginForm}" class="form" id="form2" method="post">
+            <h2 class="form__title">Sign In</h2>
+            <input type="text" th:field="*{id}" placeholder="아이디입력" class="input"
+                   title="생년월일을 입력해주세요 6자리입니다." required/>
+            <input type="tel" th:field="*{password}" placeholder="비밀번호입력" class="input"
+                   title="전화번호를 입력해주세요 전화번호는 11자리입니다." required/>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__panel overlay--left">
+                <button class="btn" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay__panel overlay--right">
+                <button class="btn" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script rel="script" type="text/javascript" src="/js/home2.js"></script>
+</body>
+</html>
