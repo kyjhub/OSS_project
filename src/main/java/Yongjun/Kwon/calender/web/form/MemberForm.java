@@ -1,8 +1,5 @@
 package Yongjun.Kwon.calender.web.form;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class MemberForm {
     @NotBlank(message = "아이디를 입력하지 않았습니다.")
-    private String id;
+    private String loginId;
     @NotBlank(message = "비밀번호를 입력하지 않았습니다.")
     private String password;
     @NotBlank(message = "전화번호를 입력하지 않았습니다.")
@@ -22,8 +19,8 @@ public class MemberForm {
     public MemberForm() {
     }
 
-    public MemberForm(String id, String password, String phoneNumber) {
-        this.id = id;
+    public MemberForm(String loginId, String password, String phoneNumber) {
+        this.loginId = loginId;
         this.password = password;
         this.phoneNumber = phoneNumber;
     }

@@ -18,10 +18,10 @@
             </div>
 
 <!--            <div>-->
-                <input type="text" th:field="*{id}" placeholder="아이디" class="input"
+                <input type="text" th:field="*{loginId}" placeholder="아이디" class="input"
                        title="아이디를 입력해주세요"
-                        th:errorclass="field-error">
-                <div class="field-error" th:errors="*{id}"/>
+                       th:errorclass="field-error">
+                <div class="field-error" th:errors="*{loginId}"/>
 <!--            </div>-->
 <!--            <div>-->
                 <input type="password" th:field="*{password}" placeholder="비밀번호" class="input"
@@ -56,9 +56,9 @@
         <form action="/login" th:object="${loginForm}" class="form" id="form2" method="post">
             <h2 class="form__title">Sign In</h2>
             <input type="text" th:field="*{id}" placeholder="아이디입력" class="input"
-                   title="생년월일을 입력해주세요 6자리입니다." required/>
+                   title="아이디를 입력해주세요." required/>
             <input type="tel" th:field="*{password}" placeholder="비밀번호입력" class="input"
-                   title="전화번호를 입력해주세요 전화번호는 11자리입니다." required/>
+                   title="비밀번호를 입력해주세요" required/>
             <button type="submit" class="btn">Sign In</button>
         </form>
     </div>

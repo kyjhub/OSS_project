@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 @Repository
@@ -19,7 +20,7 @@ public class MemberRepository {
         em.persist(member);
     }
 
-    public Member find(String Id) {
+    public Member find(Long Id) {
         return em.find(Member.class, Id);
     }
 
@@ -28,10 +29,10 @@ public class MemberRepository {
                 .getResultList();
     }
 
-    public Optional<Member> findById(String loginId) {
-        return findAll().stream()
-                .filter(m -> m.getId().equals(loginId))
-                .findFirst();
+    public Member findById(Long Id) {
+        return em.createQuery("select m from Member m where m.id=:id", Member.class)
+                .setParameter("id", Id)
+                .getSingleResult();
     }
 
     public Member findByName(String Name) {
@@ -49,5 +50,11 @@ public class MemberRepository {
     public List<String> findAllPhoneNumber() {
         return em.createQuery("select m.phoneNumber from Member m", String.class)
                 .getResultList();
+    }
+
+    public Optional<Member> findByLoginId(String loginId) {
+        return findAll().stream()
+                .filter(m -> m.getLoginId().equals(loginId))
+                .findFirst();
     }
 }

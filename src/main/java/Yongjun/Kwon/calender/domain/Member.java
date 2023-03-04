@@ -1,29 +1,31 @@
 package Yongjun.Kwon.calender.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.persistence.*;
 import lombok.Getter;
 
 @Entity
 @Getter
 public class Member {
-    @Id
+    @Id @GeneratedValue
     @Column(name = "member_id")
-    private String id;
+    private Long id;
+    private String loginId;
     private String password;
     private String name;
     private String phoneNumber;
 
     protected Member() {
     }
+    public static Member createMember() {
+        return new Member();
+    }
 
-    public Member(String id, String password, String name, String phoneNumber) {
-        this.id = id;
+    public Member(String loginId, String password, String name, String phoneNumber) {
+        this.loginId = loginId;
         this.password = password;
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
+//==연관관계 메서드==//
+
 }

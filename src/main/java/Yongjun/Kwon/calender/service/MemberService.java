@@ -29,32 +29,23 @@ public class MemberService {
             throw new IllegalStateException("가입된 전화번호가 없습니다.");
         }
     }
-
-    /*임시 로그인*/
-   /* public LoginMessage login(MemberForm form) {
-        String phoneNumber = form.getPhoneNumber();
-        try {
-            validateIsNullPhoneNumber(phoneNumber);
-            LoginMessage loginsuccessMessage = new LoginMessage("로그인 되었습니다.", "/calender");
-            return loginsuccessMessage;
-
-        } catch (IllegalStateException e) {
-            LoginMessage loginFailMessage = new LoginMessage("생년월일 또는 전화번호가 올바르지 않습니다.", "/");
-            e.printStackTrace();
-            return loginFailMessage;
-        }
-    }*/
-    public Optional<Member> findOne(String memberId) {
+    /**
+     * @return null이면 로그인 실패
+     */
+    public Member login(String loginId, String password) {
+        return memberRepository.findByLoginId(loginId)
+                .filter(m -> m.getPassword().equals(password))
+                .orElse(null);
+    }
+    public Member findOne(Long memberId) {
         return memberRepository.findById(memberId);
     }
-
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
 
-    /*로그인 땜에 필요*/
+    /*전화번호 중복 확인 때문에 필요*/
     public List<String > findAllPhoneNumber() {
         return memberRepository.findAllPhoneNumber();
-
     }
 }

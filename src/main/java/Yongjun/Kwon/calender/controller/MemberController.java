@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequiredArgsConstructor
 @Slf4j
 public class MemberController {
-
     private final MemberService memberService;
 
     /* 회원가입 */
@@ -23,19 +22,18 @@ public class MemberController {
         if (bindingResult.hasErrors()) {
             return "redirect:/home";
         }
-        log.info("membercontroller postmapping");
+        log.info("membercontroller = {}", form);
 
-        String id = form.getId();
-        String password = form.getPassword();
-        String phoneNumber = form.getPhoneNumber();
-        String name = form.getName();
-        // 집에서 form에 input요소 개수 늘려도 정상 작동되면
-        // 회원가입할 떄 이름도 입력하도록 바꾸자.
-        Member member = new Member(id, password, name, phoneNumber);
-
+        Member member = createMember(form);
         memberService.join(member);
 
         return "redirect:/";
+    }
+
+    private static Member createMember(MemberForm form) {
+        Member member = new Member(form.getLoginId(), form.getPassword(),
+                form.getName(), form.getPhoneNumber());
+        return member;
     }
 
 }
