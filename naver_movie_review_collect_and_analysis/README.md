@@ -56,7 +56,7 @@ BERT 사용 코드 : [kiyoungkim1's github](https://github.com/kiyoungkim1/Ready
 ` 코드 상단의 open in colab 버튼을 누르면 코랩 환경에서 작동 가능합니다.`<br/>
 
 1. 리뷰를 찾고싶은 영화 제목을 입력하면 `movie_name`변수에 저장.<br/>
-![movie_list](./image/img2.png)<br/><br/>
+![movie_list](../image/img2.png)<br/><br/>
 
 1. 입력한 영화 제목이 포함된 모든 영화 정보와 포스터 출력<br/>
 ![movie_list](./image/img13.png)<br/>
