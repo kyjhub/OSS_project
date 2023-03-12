@@ -1,5 +1,5 @@
 # 원하는 네이버 영화 리뷰 수집, 분석
-![book_cover](./image/img0.png)
+![book_cover](https://user-images.githubusercontent.com/86425607/224525279-1dc7891c-186e-4040-8cf9-8b51daac4fb2.png)
 <br/><br/>
 
 ## License
