@@ -1,4 +1,4 @@
-package Yongjun.Kwon.calender.web.session;
+package Yongjun.Kwon.calender.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
