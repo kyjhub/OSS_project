@@ -14,7 +14,7 @@ public class CalenderController {
     public String calender(Model model) {
         log.info("calender controller");
 //        model.addAttribute("Event", new EventForm());
-        return "calendar";
+        return "/calendar";
     }
 
  /*   @PostMapping("/calender")

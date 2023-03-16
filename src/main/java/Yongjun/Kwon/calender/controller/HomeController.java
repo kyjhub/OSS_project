@@ -20,7 +20,7 @@ public class HomeController {
         log.info("home controller");
 
         if (loginMember == null) {
-            log.info("세션만료 or 회원가입 필요");
+            log.info("세션만료 or 재로그인 필요");
             model.addAttribute("memberForm", new MemberForm());
             model.addAttribute("loginForm", new LoginForm());
             return "/home";
