@@ -1,40 +1,48 @@
 package Yongjun.Kwon.calender.controller;
 
+import Yongjun.Kwon.calender.domain.Event;
+import Yongjun.Kwon.calender.domain.EventStatus;
+import Yongjun.Kwon.calender.domain.Member;
 import Yongjun.Kwon.calender.service.EventService;
-import lombok.Data;
+import Yongjun.Kwon.calender.web.SessionConst;
+import Yongjun.Kwon.calender.web.form.EventForm;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.time.LocalDateTime;
 
 @Controller
 @Slf4j
 @RequiredArgsConstructor
 public class EventController {
-
     private final EventService eventService;
 
     @ResponseBody
     @PostMapping("/calender")
-    public String addEvent(@RequestBody CreateEventRequest createEventRequest) {
-        log.info("createEventRequest.todo= {}", createEventRequest.getTodo());
-        log.info("createEventRequest.localDateTime= {}", createEventRequest.getLocalDateTime());
-//        eventService.generateEvent()
+    public String addEvent(@Valid @RequestBody EventForm eventform, BindingResult bindingResult, HttpServletRequest request) {
+        log.info("eventform.todo= {}", eventform.getTodo());
+        log.info("eventform.startDateTime= {}", eventform.getStartDateTime());
+        log.info("eventform.endDateTime= {}", eventform.getEndDateTime());
+
+        if (bindingResult.hasErrors()) {
+            log.info("event controller bindingresult error");
+            return "/calender";
+        }
+
+        HttpSession session = request.getSession(false);
+        Member member = (Member) session.getAttribute(SessionConst.LOGIN_MEMBER);
+
+        Event event = Event.createEvent(member, eventform.getTodo(), eventform.getStartDateTime(),
+                eventform.getEndDateTime(), EventStatus.RESERVATION);
+
+        Long eventId = eventService.generateEvent(event);
+
         return "ok";
     }
-
-    @Data
-    static class CreateEventRequest {
-        private String todo;
-        @DateTimeFormat(pattern ="yyyy-MM-dd'T'HH:mm:ss")
-        private LocalDateTime localDateTime;
-//    private Member member;
-    }
-
 }

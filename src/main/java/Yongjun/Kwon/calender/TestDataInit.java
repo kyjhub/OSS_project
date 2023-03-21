@@ -1,6 +1,8 @@
 package Yongjun.Kwon.calender;
 
+import Yongjun.Kwon.calender.domain.Member;
 import Yongjun.Kwon.calender.repository.MemberRepository;
+import Yongjun.Kwon.calender.service.MemberService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -8,12 +10,10 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class TestDataInit {
-    private final MemberRepository memberRepository;
+    private final MemberService memberService;
     @PostConstruct
     public void init() {
-/*
-        memberRepository.save(new Member("111", "1234", "ㅇㅇㅇ", "01054587844"));
-        memberRepository.save(new Member("222", "5678", "ㄴㄴㄴ", "01012345678"));
-*/
+        memberService.join(new Member("1234", "1234", "ㅇㅇㅇ", "01012345678"));
+        memberService.join(new Member("5678", "5678", "ㄴㄴㄴ", "01056781234"));
     }
 }

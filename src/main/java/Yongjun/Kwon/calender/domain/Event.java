@@ -2,8 +2,8 @@ package Yongjun.Kwon.calender.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
@@ -13,27 +13,30 @@ public class Event {
     protected Event() {
     }
 
-    public Event(Member member, String todo, LocalDateTime localDateTime) {
-        this.member = member;
+    public Event(String todo, LocalDateTime startDateTime, LocalDateTime endDateTime, Member member, EventStatus eventStatus) {
         this.todo = todo;
-        this.localDateTime = localDateTime;
-        this.eventStatus = EventStatus.INTENDED;
+        this.startDateTime = startDateTime;
+        this.endDateTime = endDateTime;
+        this.member = member;
+        this.eventStatus = eventStatus;
     }
 
     @Id @GeneratedValue
     @Column(name = "event_id")
     private Long id;
     private String todo;
-    @NotBlank(message = "연월일이 없습니다.")
-    private LocalDateTime localDateTime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime startDateTime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime endDateTime;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
     @Enumerated(EnumType.STRING)
     private EventStatus eventStatus;
 
-    public static Event createEvent(Member newMember, String newTodo) {
-        Event newEvent = new Event(newMember, newTodo, LocalDateTime.now());
-        return newEvent;
+    public static Event createEvent(Member member, String newTodo,
+                                    LocalDateTime startDateTime, LocalDateTime endDateTime, EventStatus eventStatus) {
+        return new Event(newTodo, startDateTime, endDateTime, member, eventStatus);
     }
 }
