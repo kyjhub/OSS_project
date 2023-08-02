@@ -1,12 +1,22 @@
 spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/calender
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
   datasource:
-    url: jdbc:h2:tcp://localhost/~/calender
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: jdbc:mysql://localhost:3306/mytest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
   jpa:
     hibernate:
       ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true    // JPA의 구현체인 Hibernate가 동작하면서 발생한 SQL의 가독성을 높여준다.
+    show-sql: true
   properties:
     hibernate:
   # show_sql: true
